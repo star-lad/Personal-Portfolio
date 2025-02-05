@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajay Arivalagan's Portfolio</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+  <header>
+    <h1 class="logo">Ajay Arivalagan</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievements">Achievements & Certifications</a></li>
+        <li><a href="#contact">Contact-via</a></li>
+      </u1>
+         
+    </nav>
+  </header>
+
+      <section id="about">
+          <img src="portfolio-images/pfp.jpeg" alt="Profile Picture" class="profile-img">
+          <h2 class="typing-text"> Ajay Arivalagan! </h2>
+          <p>Heyyy, Internet Wanderer! </p>
+          <br>
+          <p>I'm a web developer and finance enthusiast passionate about crafting seamless digital experiences. As a 2nd-year Computer Science and Business Systems student,
+             I specialize in HTML, CSS, JavaScript, and MySQL, building intuitive and user-friendly web applications. With a strong interest in finance and tech, 
+             I aim to bridge the gap between technology and financial literacy, creating solutions that help users make informed decisions.</p>
+      </section>
+
+      <section id="skills">
+          <h2>Skills</h2>
+          <div class="skills-container">
+              <div class="skill"><img src="portfolio-images/html-skill.png" alt="HTML"> <p>HTML</p></div>
+              <div class="skill"><img src="portfolio-images/css-skill.png" alt="CSS"> <p>CSS</p></div>
+              <div class="skill"><img src="portfolio-images/js.png" alt="JavaScript"> <p>JavaScript</p></div>
+              <div class="skill"><img src="portfolio-images/logo-mysql-170x115.png" alt="MySQL"> <p>MySQL</p></div>
+              <div class="skill"><img src="portfolio-images/python-logo-only.png" alt="Python"> <p>Python</p></div>
+          </div>
+      </section>
+
+      <section id="projects">
+          <h2>Projects</h2>
+          <div class="projects-container">
+              <p><strong>Youtube Clone Frontend</strong> - Developed the frontend of a YouTube clone using HTML and CSS...</p>
+
+              <p><strong>Portfolio Website</strong> - Created a personal portfolio Website using HTML, CSS, and JavaScript.</p>
+
+              <p><strong>E-commerce Frontend</strong> - Built a secure e-commerce platform frontend using HTML,CSS & JS</p>
+
+              <p><strong>FInance Website</strong> - Trying to develop a Finance website using HTML,CSS & JS and with further more tools...</p>
+          </div>
+      </section>
+
+      <section id="achievements">
+        <h2>Achievements & Certifications</h2>
+        <div class="achievements">
+          <div class="achievement-card">
+            <img src="portfolio-images/HTML,CSS & JS - Coursera R1V2E99OJ2SH.png" alt="Coursera Certification">
+            <h3>HTML,CSS & JavaScript</h3>
+            <p>Completed Web Development Course with Certification through Coursera </p>
+          </div>
+
+          <div class="achievement-card">
+              <img src="portfolio-images/Finance Intern - Corizo.png" alt="Finance Intern">
+              <h3>Finance Intern @ Corizo</h3>
+              <p>Gained hands-on experience in stock market analysis and assisted in financial research.</p>
+          </div>
+  
+          <div class="achievement-card">
+              <img src="portfolio-images/SQL-Coursera.png" alt="Coursera Certification">
+              <h3>SQL Certification</h3>
+              <p>Earned a professional certificate in database management and querying through Coursera.</p>
+          </div>
+        </div>
+      </section>
+      <section id="experience">
+          <h2>Experience</h2>
+          <div class="timeline">
+              <div class="timeline-item">
+                  <h3>Finance Intern</h3>
+                  <p>Corizo • July-August 2024</p>
+                  <p>Completed a comprehensive finance internship through Coursera, gaining valuable experience in financial analysis, stock market trends,
+                     market research, and developing strategic insights to support key business decisions.</p>
+              </div>
+          </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact-via</h2>
+        <div class="contact-links">
+            <a href="https://github.com/star-lad" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/ajay-arivalagan-582758267" target="_blank">LinkedIn</a>
+            <a href="tel:+916384060396">Phone</a>
+            <a href="mailto:ajayclg06@gmail.com">Email</a>
+        </div>
+      </section>
+
+      <section id="recommendation-form">
+          <h2>Leave a Recommendation</h2>
+          <form id="recommendationForm" onsubmit="sendRecommendation(event)">
+              <textarea id="new-recommendation" placeholder="Write a recommendation..." required></textarea>
+              <button type="submit">Submit</button>
+          </form>
+      </section>
+      <footer>
+        <p> &copy; 2025 Ajay Arivalagan. All Rights Reserved. MailID - ajayclg06@gmail.com </p>
+      </footer>
+
+      <script>
+        function addRecommendation(event) {
+            event.preventDefault(); 
+    
+            let input = document.getElementById("new-recommendation").value;
+            if (input.trim() !== "") {
+                let recommendationSection = document.createElement("p");
+                recommendationSection.textContent = input;
+                recommendationSection.classList.add("recommendation-item");
+    
+                let recommendationsContainer = document.getElementById("recommendations");
+                if (!recommendationsContainer) {
+                    recommendationsContainer = document.createElement("div");
+                    recommendationsContainer.id = "recommendations";
+                    document.getElementById("recommendation-form").appendChild(recommendationsContainer);
+                }
+    
+                recommendationsContainer.appendChild(recommendationSection);
+                document.getElementById("new-recommendation").value = "";
+                alert("Thank you for submitting a recommendation!");
+            }
+        }
+    </script>
+    
+</body>
+</html>
