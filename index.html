@@ -10,12 +10,13 @@
   <header>
     <h1 class="logo">Ajay Arivalagan</h1>
     <nav>
+
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#achievements">Achievements & Certifications</a></li>
-        <li><a href="#contact">Contact-via</a></li>
+        <li><a class="contact"  href="#contact">Contact-via</a></li>
       </u1>
          
     </nav>
@@ -24,8 +25,7 @@
       <section id="about">
           <img src="portfolio-images/pfp.jpeg" alt="Profile Picture" class="profile-img">
           <h2 class="typing-text"> Ajay Arivalagan! </h2>
-          <p>Heyyy, Internet Wanderer! </p>
-          <br>
+          <p>Heyyy, Internet Wanderer!</p>
           <p>I'm a web developer and finance enthusiast passionate about crafting seamless digital experiences. As a 2nd-year Computer Science and Business Systems student,
              I specialize in HTML, CSS, JavaScript, and MySQL, building intuitive and user-friendly web applications. With a strong interest in finance and tech, 
              I aim to bridge the gap between technology and financial literacy, creating solutions that help users make informed decisions.</p>
@@ -101,7 +101,7 @@
 
       <section id="recommendation-form">
           <h2>Leave a Recommendation</h2>
-          <form id="recommendationForm" onsubmit="sendRecommendation(event)">
+          <form id="recommendationForm" onsubmit="addRecommendation(event)">
               <textarea id="new-recommendation" placeholder="Write a recommendation..." required></textarea>
               <button type="submit">Submit</button>
           </form>
