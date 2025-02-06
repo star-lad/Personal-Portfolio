@@ -25,7 +25,16 @@ portfolio/
 │── README.md          # Project documentation
 ```
 
-## 💡 Future Enhancements
-- Add a **dark mode toggle** for better user experience.
-- Integrate a **blog section** to share insights on finance and tech.
-- Implement **backend support** to store recommendations.
+🔧 Development Process
+
+This portfolio was built using a structured approach:
+
+Planning & Design: Created wireframes and designed a clean, modern UI.
+
+HTML & CSS Implementation: Developed the structure and styled it with CSS.
+
+Interactivity with JavaScript: Added animations, smooth scrolling, and form validation.
+
+Testing & Optimization: Ensured responsiveness, cross-browser compatibility, and performance improvements.
+
+Deployment: Hosted the portfolio on GitHub Pages.
