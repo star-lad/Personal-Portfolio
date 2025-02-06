@@ -25,7 +25,7 @@ portfolio/
 │── README.md          # Project documentation
 ```
 
-🔧 Development Process
+##🧑‍💻Development Process
 
 This portfolio was built using a structured approach:
 
